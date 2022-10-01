@@ -1,0 +1,20 @@
+<div style="background-color:lightgrey; font-size: large; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+    <h3>Signup Here</h3>
+    
+        
+ <form [formGroup]="loginRef" (ngSubmit)="createAccount()">
+    <label >Enter Email Id</label>
+    <input type="email"  formControlName="email"  name="" id=""><br><br>
+
+    <label for="">Enter Password</label>
+    <input type="password" formControlName="pass"/><br/><br><br>
+    <input type="submit" value="submit"/>
+    <input type="reset" value="reset"/>
+ </form>
+
+ <br>
+
+
+ <span style="color: red;">{{msg}}</span>
+
+</div>
